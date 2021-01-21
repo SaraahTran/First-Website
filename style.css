@@ -29,32 +29,30 @@ p{
     font-size: 1.6rem;
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  overflow-x: hidden;
-}
-
-
 /*Backgrounds*/
 
 
 .container{
     height: 140vh;
     width: 100%;
+    min-width: 1400px
     background-image: url(images/home-background.png); 
     background-repeat: no-repeat;
+    background-position: fixed;
     overflow-x: hidden;
 
+ 
 
+}
 
 .about{
     height: 140vh;
     width: 100%;
     background-image: url(images/about-background.png); 
     background-repeat: no-repeat;
+    background-position: fixed;
     overflow-x: hidden;
+    min-width: 1400px;
 }
 
 .skills{
@@ -62,8 +60,9 @@ p{
     width: 100%;
     background-image: url(images/skills-background.png); 
     background-repeat: no-repeat;
+    background-position: fixed;
     overflow-x: hidden;
-
+    min-width: 1400px;
 }
 
 .portfolio{
@@ -71,8 +70,9 @@ p{
     width: 100%;
     background-image: url(images/portfolio-background.png); 
     background-repeat: no-repeat;
+    background-position: fixed;
     overflow-x: hidden;
-
+    min-width: 1400px;
 }
 
 
