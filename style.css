@@ -46,7 +46,6 @@ p{
     min-width: 1400px;
     background-image: url(images/home-background.png); 
     background-repeat: no-repeat;
-    background-position: fixed;
     overflow-x: hidden;
 
  
@@ -58,7 +57,6 @@ p{
     width: 100%;
     background-image: url(images/about-background.png); 
     background-repeat: no-repeat;
-    background-position: fixed;
     overflow-x: hidden;
 }
 
@@ -67,7 +65,6 @@ p{
     width: 100%;
     background-image: url(images/skills-background.png); 
     background-repeat: no-repeat;
-    background-position: fixed;
     overflow-x: hidden;
 
 }
@@ -77,7 +74,6 @@ p{
     width: 100%;
     background-image: url(images/portfolio-background.png); 
     background-repeat: no-repeat;
-    background-position: fixed;
     overflow-x: hidden;
 
 }
