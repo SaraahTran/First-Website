@@ -35,12 +35,12 @@ p{
 .container{
     height: 140vh;
     width: 100%;
+    min-width: 1400px;
     background-image: url(images/home-background.png); 
     background-repeat: no-repeat;
     background-position: fixed;
-    margin-right: 5%;
     overflow-x: hidden;
-    min-width: 1400px;
+
  
 
 }
@@ -48,11 +48,11 @@ p{
 .about{
     height: 140vh;
     width: 100%;
+    min-width: 1400px;
     background-image: url(images/about-background.png); 
     background-repeat: no-repeat;
     background-position: fixed;
     overflow-x: hidden;
-    min-width: 1400px;
 }
 
 .skills{
@@ -63,6 +63,7 @@ p{
     background-position: fixed;
     overflow-x: hidden;
     min-width: 1400px;
+
 }
 
 .portfolio{
@@ -73,6 +74,7 @@ p{
     background-position: fixed;
     overflow-x: hidden;
     min-width: 1400px;
+
 }
 
 
