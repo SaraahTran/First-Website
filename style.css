@@ -29,6 +29,14 @@ p{
     font-size: 1.6rem;
 }
 
+@media screen and (max-width: 900px) {
+    
+   .container, .about, .skills, .portfolio, .social-media{
+       background-image: none;
+       width: 900px;
+  
+    }
+
 /*Backgrounds*/
 
 
