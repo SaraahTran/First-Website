@@ -13,6 +13,12 @@ html{
     box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+body{
+    overflow-x: hidden;
 
 }
 
@@ -27,6 +33,7 @@ ul{
 p{
     font-size: 1.6rem;
 }
+
 
 
 /*Navigation*/
@@ -150,21 +157,16 @@ nav a:hover {
 
 .header-container h1{
     font-size: 50px;
-    font-weight: 100;
-    text-align: left;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    min-width: 100%;
     position: relative;
     font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 70px;
     line-height: 105px;
     color: #555767;
     text-transform: uppercase;
     letter-spacing: 5px;
     position: relative;
+    text-align: left;
 
 }
 
@@ -389,10 +391,10 @@ top: 300px;
 }
 
 .about-container h1{
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-    font-weight: bold;
+    position: relative;
+    font-family: Poppins;
     line-height: 105px;
     color: #555767;
     text-transform: uppercase;
@@ -598,15 +600,12 @@ right: 250px;
     }
     
     .portfolio-container h1{
-        font-size: 60px;
-        font-weight: 100;
+        font-size: 50px;
+        font-weight: 900;
         font-family: 'Poppins', sans-serif;
-        font-weight: bold;
         min-width: 100%;
         font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 70px;
+        font-style: bold;
         line-height: 105px;
         color: #555767;
         text-transform: uppercase;
