@@ -16,6 +16,7 @@ html{
     -webkit-overflow-scrolling: touch;
         margin: 0px;
     padding: 0px;
+        width: 100%;
 
 }
 
@@ -23,6 +24,7 @@ body{
     overflow-x: hidden;
     margin: 0px;
     padding: 0px;
+    width: 100%;
 
 }
 
