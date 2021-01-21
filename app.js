@@ -65,15 +65,3 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
-
-
-document.addEventListener('touchstart', this.touchstart);
-document.addEventListener('touchmove', this.touchmove);
-
-function touchstart(e) {
-    e.preventDefault()
-}
-
-function touchmove(e) {
-    e.preventDefault()
-}
