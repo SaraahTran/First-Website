@@ -43,14 +43,11 @@ p{
 .container{
     height: 140vh;
     width: 100%;
-    min-width: 1400px;
     background-image: url(images/home-background.png); 
     background-repeat: no-repeat;
     overflow-x: hidden;
 
- 
 
-}
 
 .about{
     height: 140vh;
