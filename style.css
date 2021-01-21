@@ -29,7 +29,6 @@ p{
 }
 
 
-
 /*Navigation*/
 
 nav {
@@ -855,6 +854,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 .wraps{
     float: center;
 }
+
 
 @media screen and (max-width: 900px) {
 
