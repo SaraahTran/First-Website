@@ -362,17 +362,14 @@ nav a:hover {
 }
 
 .header-container h1{
-    font-size: 50px;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     font-weight: 100;
     text-align: left;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     min-width: 100%;
     position: relative;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 70px;
     line-height: 105px;
     color: #555767;
     text-transform: uppercase;
@@ -403,15 +400,10 @@ top: 300px;
 }
 
 .about-container h1{
-    font-size: 50px;
-    font-weight: 100;
+    font-size: 60px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 100;
     font-weight: bold;
-    min-width: 100%;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 70px;
     line-height: 105px;
     color: #555767;
     text-transform: uppercase;
@@ -424,7 +416,7 @@ top: 300px;
 
 .banner{
 position: relative;
-right: 200px;
+right: 250px;
 
 }
 
@@ -478,15 +470,13 @@ right: 200px;
     }
     
     .skills-container h1{
-        font-size: 50px;
-        font-weight: 100;
+        font-size: 60px;
         font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: bolder;
         font-weight: bold;
         min-width: 100%;
         font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 70px;
         line-height: 105px;
         color: #555767;
         text-transform: uppercase;
