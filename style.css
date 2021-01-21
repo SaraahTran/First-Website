@@ -29,6 +29,45 @@ p{
     font-size: 1.6rem;
 }
 
+/*Mobile*/
+@media (min-width:481px)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+    .container{
+        max-width: 481px;
+    }
+
+    .about{
+        max-width: 481px;
+    }
+
+    .skills{
+        max-width: 481px;
+    }
+
+    .portfolio{
+        max-width: 481px;
+    }
+}
+@media (min-width:641px)  {
+     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    
+     .container{
+        max-width: 641px;
+    }
+
+    .about{
+        max-width: 641px;
+    }
+
+    .skills{
+        max-width: 641px;
+    }
+
+    .portfolio{
+        max-width: 641px;
+    }
+
 /*Backgrounds*/
 
 
