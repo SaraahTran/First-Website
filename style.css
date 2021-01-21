@@ -32,8 +32,8 @@ p{
 @media screen and (max-width: 900px) {
     
    .container, .about, .skills, .portfolio, .social-media{
-       background-image: none;
-       width: 900px;
+        background-size: cover;
+    background-attachment:fixed
   
     }
 
