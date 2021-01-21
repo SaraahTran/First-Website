@@ -29,6 +29,14 @@ p{
     font-size: 1.6rem;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  overflow-x: hidden;
+}
+
+
 /*Backgrounds*/
 
 
@@ -48,7 +56,6 @@ p{
 .about{
     height: 140vh;
     width: 100%;
-    min-width: 1400px;
     background-image: url(images/about-background.png); 
     background-repeat: no-repeat;
     background-position: fixed;
@@ -62,7 +69,6 @@ p{
     background-repeat: no-repeat;
     background-position: fixed;
     overflow-x: hidden;
-    min-width: 1400px;
 
 }
 
@@ -73,7 +79,6 @@ p{
     background-repeat: no-repeat;
     background-position: fixed;
     overflow-x: hidden;
-    min-width: 1400px;
 
 }
 
