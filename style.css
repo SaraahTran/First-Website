@@ -1,4 +1,3 @@
-/*Start*/
 /*Global Styles*/
 *,
 *::before, 
@@ -27,61 +26,6 @@ ul{
 
 p{
     font-size: 1.6rem;
-}
-
-@media screen and (max-width: 900px) {
-    
-   .container, .about, .skills, .portfolio, .social-media{
-        background-size: cover;
-    background-attachment:fixed;
-  
-    }
-
-/*Backgrounds*/
-
-
-.container{
-    height: 140vh;
-    width: 100%;
-    max-width: 1400px;
-    background-image: url(images/home-background.png); 
-    background-repeat: no-repeat;
-    background-position: fixed;
-    overflow-x: hidden;
-    align-items: right;
-
- 
-
-}
-
-.about{
-    height: 140vh;
-    width: 100%;
-    background-image: url(images/about-background.png); 
-    background-repeat: no-repeat;
-    background-position: fixed;
-    overflow-x: hidden;
-    max-width: 1400px;
-}
-
-.skills{
-    height: 140vh;
-    width: 100%;
-    background-image: url(images/skills-background.png); 
-    background-repeat: no-repeat;
-    background-position: fixed;
-    overflow-x: hidden;
-    max-width: 1400px;
-}
-
-.portfolio{
-    height: 140vh;
-    width: 100%;
-    background-image: url(images/portfolio-background.png); 
-    background-repeat: no-repeat;
-    background-position: fixed;
-    overflow-x: hidden;
-    max-width: 1400px;
 }
 
 
@@ -151,8 +95,50 @@ nav a:hover {
 
 
 }
- 
 
+
+/*Sections*/
+
+
+.container{
+    height: 140vh;
+    width: 100%;
+    min-width: 1400px;
+    background-image: url(images/home-background.png); 
+    background-repeat: no-repeat;
+    background-position: fixed;
+    overflow-x: hidden;
+}
+
+.about{
+    height: 140vh;
+    width: 100%;
+    background-image: url(images/about-background.png); 
+    background-repeat: no-repeat;
+    background-position: fixed;
+    overflow-x: hidden;
+    min-width: 1400px;
+}
+
+.skills{
+    height: 140vh;
+    width: 100%;
+    background-image: url(images/skills-background.png); 
+    background-repeat: no-repeat;
+    background-position: fixed;
+    overflow-x: hidden;
+    min-width: 1400px;
+}
+
+.portfolio{
+    height: 140vh;
+    width: 100%;
+    background-image: url(images/portfolio-background.png); 
+    background-repeat: no-repeat;
+    background-position: fixed;
+    overflow-x: hidden;
+    min-width: 1400px;
+}
 
 /*Header Container*/
 
@@ -268,8 +254,30 @@ nav a:hover {
 }
 
 
-/*Mobile Friendly*/
- 
+.header-container{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    z-index: -0.9;
+}
+
+.header-container h1{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: left;
+    font-weight: bold;
+    min-width: 100%;
+    position: relative;
+    line-height: 105px;
+    color: #555767;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+
+}
+
 @media screen and (max-width: 900px) {
 
     .header-container h1{
@@ -298,7 +306,6 @@ nav a:hover {
     .btn{
         display: none;
     }
-
 
     .line {
       width: 30px;
@@ -360,32 +367,6 @@ nav a:hover {
         display: none;
     }
   }
-
-  /*Header Container*/
-
-.header-container{
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    z-index: -0.9;
-}
-
-.header-container h1{
-    font-size: 60px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    text-align: left;
-    font-weight: bold;
-    min-width: 100%;
-    position: relative;
-    line-height: 105px;
-    color: #555767;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    position: relative;
-
-}
 
 /*About Container*/
 
@@ -510,12 +491,12 @@ right: 250px;
         text-align: center;
     }
     
-    .banner3{
+    .banner2{
     position: relative;
     
     }
 
-    /* Grow */
+    /* Grow Icons */
     .grow { 
         transition: all .2s ease-in-out; 
     }
@@ -545,7 +526,6 @@ right: 250px;
           background:transparent;
       } 
       
-      /* revert/restore properties on larger screen */
       @media all and (min-width: 900px) {
         tr {
           display: table-row;
@@ -642,7 +622,7 @@ right: 250px;
     }
 
 
-    /*Gallery*/
+/*Portfolio*/
 
 .tile
 {
@@ -875,9 +855,6 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 .wraps{
     float: center;
 }
-
-
-
 
 @media screen and (max-width: 900px) {
 
