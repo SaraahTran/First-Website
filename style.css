@@ -283,15 +283,16 @@ nav a:hover {
     }
 
     .hero-image{
-       left: -370px;
-       top: 200px;
-       float: left;
-       margin: 0 0 5px 5px;
-       position: absolute;
-       z-index: -0.5;
-       transition: all .40s;
-    
-    }
+      left: -370px;
+      top: 200px;
+      float: left;
+      position: relative;
+      z-index: -0.5;
+      transition: all .40s;
+   
+   }
+
+
 
     .home-wrapper{
         position: absolute;
@@ -470,7 +471,7 @@ position: relative;
 
     
     .skills-container p{
-        width: 30%;
+        width: 10%;
         text-align: center;
         align-items: center;
         display: inline;
@@ -507,6 +508,10 @@ position: relative;
         position: relative;
         text-align: center;
         margin: 0;
+    }
+
+    td{
+      width: 70%;
     }
 
 
