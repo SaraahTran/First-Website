@@ -7,6 +7,7 @@
     box-sizing: inherit;
 }
 
+
 html{
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
@@ -14,17 +15,11 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-        margin: 0px;
-    padding: 0px;
-        width: 100%;
 
 }
 
 body{
     overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
 
 }
 
@@ -40,7 +35,10 @@ p{
     font-size: 1.6rem;
 }
 
-
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
 
 /*Navigation*/
 
@@ -61,6 +59,7 @@ nav {
     list-style: none;
     align-items: center;
     position: absolute;
+    left: 40px;
 }
 
   .nav-links {
@@ -111,16 +110,16 @@ nav a:hover {
 
 /*Sections*/
 
-
-.container{
+.home{
     height: 140vh;
     width: 100%;
-    min-width: 1400px;
     background-image: url(images/home-background.png); 
     background-repeat: no-repeat;
     background-position: fixed;
     overflow-x: hidden;
+    min-width: 1400px;
 }
+
 
 .about{
     height: 140vh;
@@ -254,8 +253,8 @@ nav a:hover {
 .hero-image{
     float: right;
     clear: right;
-    left: 80%;
-    top: -220px;
+    left: 350px;
+    top: -200px;
     position: absolute;
 
 }
@@ -432,6 +431,10 @@ right: 250px;
         display: none;
     }
 
+    .banner2{
+        display: none;
+    }
+
     .about-image{
         right: 10px;
         top: 500px;
@@ -570,6 +573,7 @@ right: 250px;
                position: absolute;
                justify-content: spaced-evenly;
             }
+            
 
 
 
@@ -979,7 +983,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   }
   
   .social-media ul li:nth-child(2) a:before{
-    background: #55acee;
+    background: #24292e;
   }
   
   .social-media ul li:nth-child(3) a:before {
@@ -987,5 +991,5 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   }
   
   .social-media ul li:nth-child(4) a:before {
-    background: #dd4b39;
+    background: #053eff;
   }
