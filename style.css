@@ -7,6 +7,10 @@
     box-sizing: inherit;
 }
 
+*{
+    border: 1px solid #555;
+}
+
 
 html{
     font-family: 'Poppins', sans-serif;
