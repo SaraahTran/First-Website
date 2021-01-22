@@ -288,8 +288,6 @@ nav a:hover {
        float: left;
        margin: 0 0 5px 5px;
        position: absolute;
-       width: 100px;
-       height: 100px;
        z-index: -0.5;
        transition: all .40s;
     
