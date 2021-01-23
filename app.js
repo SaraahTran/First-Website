@@ -79,6 +79,21 @@ function touchmove(e) {
 }
 
 
+//Image Fit
+    function set_body_height() { // set body height = window height
+        $('body').height($(window).height());
+    }
+    $(document).ready(function() {
+        $(window).bind('resize', set_body_height);
+        set_body_height();
+    });
+
+
+    //Fit Text
+
+    jQuery("h1").fitText(0.38);
+
+
     $.fn.fixWidth = function () {
       $(this).each(function () {
           var el = $(this);
@@ -128,3 +143,7 @@ function touchmove(e) {
   $(function () {
       $(".fixed").fixWidth();
   });
+
+
+
+  jQuery("h1").fitText(0.38);
