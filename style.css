@@ -32,9 +32,21 @@ p{
     font-size: 1.6rem;
 }
 
+h1{
+  letter-spacing: 7px;
+  line-height: 50px;
+  padding-bottom: 30px;
+}
+
 @viewport {
     width: device-width ;
     zoom: 1.0 ;
+  }
+
+  /*Text*/
+
+  .light-font{
+    color: #A3A7CE;
   }
 
 /*Navigation*/
@@ -52,7 +64,6 @@ nav {
 
   #logo{
     text-transform: uppercase;
-    letter-spacing: 5px;
     font-size: 20px;
     color: #555767;
     text-decoration: none;
@@ -115,7 +126,7 @@ nav a:hover {
 .home {
   background-image: url('images/home-background.png');
   width: 100%;
-  height: 140vh;
+  height: 135vh;
   background-size: cover;
   
 }
@@ -124,7 +135,7 @@ nav a:hover {
   background-image: url('images/about-background.png');
   width: 100%;
   background-size: cover;
-  height: 140vh;
+  height: 120vh;
 }
 
 .skills {
@@ -229,7 +240,7 @@ nav a:hover {
 .hero-image{
     margin: 0;
     left: 500px;
-    top: 200px;
+    top: 140px;
     position: absolute;
     z-index: -0.5;
 
@@ -252,10 +263,9 @@ nav a:hover {
     font-weight: bold;
     min-width: 100%;
     position: relative;
-    line-height: 105px;
+    line-height: 50px;
     color: #555767;
     text-transform: uppercase;
-    letter-spacing: 5px;
     position: relative;
 
 }
@@ -269,6 +279,10 @@ nav a:hover {
 }}
 
 @media screen and (max-width: 900px) {
+
+  h1{
+    letter-spacing: 5px;
+  }
 
     .home-container h1{
         width: 100%;
@@ -365,16 +379,54 @@ nav a:hover {
     }
   }
 
+  @media screen and (max-width: 800px) {
+
+    .hero-image{
+      top: 150px;
+
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .home{
+      background-image: none;
+    }
+
+    .hero-image{
+      top: 50px;
+    }
+  
+  }
+
   
   @media screen and (max-width: 380px) {
     .hero-image{
-      top: 70px;
+      top: 30px;
     }
 
     .skills{
       display: none;
     }
 
+  }
+
+
+  @media screen and (max-width: 320px) {
+
+    .home-container{
+      position: relative;
+      margin-top: 50%;
+    }
+
+    .home{
+height: 50vh;
+    }
+
+    .hero-image{
+      display: none;
+    }
+  
   }
 
 /*About Container*/
@@ -408,10 +460,9 @@ nav a:hover {
     font-family: 'Poppins', sans-serif;
     position: relative;
     font-family: Poppins;
-    line-height: 105px;
+    line-height: 50px;
     color: #555767;
     text-transform: uppercase;
-    letter-spacing: 5px;
     position: relative;
     text-align: center;
 
@@ -424,13 +475,14 @@ position: relative;
 
 .about-image{
     position: relative;
-    top: 200px;
+    top: 80px;
+  left: 80px;
 }
 
 @media screen and (max-width: 900px) {
 
 .about-container h1{
-  font-size: 50px;
+  font-size: 40px;
 }
 }
 
@@ -438,7 +490,7 @@ position: relative;
 
     .about-image{
         right: 10px;
-        top: 200px;
+        top: 80px;
  
     }
     .about-container p{
@@ -446,11 +498,28 @@ position: relative;
       color:#6C7593;
   }
 
+  .about{
+    height: 100vh;
+  }
+
 }
 
 @media screen and (max-width: 380px) {
+
+  .about{
+    height: 120vh;
+  }
+
   .about-image{
     display: none;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  .about{
+    height: 120vh;
   }
 
 }
@@ -504,10 +573,9 @@ position: relative;
       font-family: 'Poppins', sans-serif;
       position: relative;
       font-family: Poppins;
-      line-height: 105px;
+      line-height: 50px;
       color: #555767;
       text-transform: uppercase;
-      letter-spacing: 5px;
       position: relative;
       text-align: center;
     }
@@ -555,7 +623,7 @@ position: relative;
       }
 
       .skills-container h1{
-        font-size: 25px;
+        font-size: 40px;
       }
       
 
@@ -564,6 +632,10 @@ position: relative;
         height: 50px;
       }
     }    
+
+
+
+    
 
                 
     @media screen and (max-width: 450px) {
@@ -586,15 +658,13 @@ position: relative;
       }
     }
 
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 450px) {
 
         .about-image{
           display: none;
         }
 
-        .hero-image{
-         display: none;
-        }
+       
   
     }
     
@@ -641,10 +711,9 @@ position: relative;
         min-width: 100%;
         font-family: Poppins;
         font-style: bold;
-        line-height: 105px;
+        line-height: 50px;
         color: #555767;
         text-transform: uppercase;
-        letter-spacing: 5px;
         position: relative;
         text-align: center;
     
@@ -908,29 +977,64 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 @media screen and (max-width: 900px) {
 
   .tile{
-    width:200px;
-    height:200px;
+    width:249px;
+    height:249px;
     transition: height 0.2s ease-out;
     transition: all .40s;
   }
 
   .portfolio-container h1{
-    font-size: 25px;
+    font-size: 40px;
   }
 
   .tile h1{
     font-size: 13px;
 }
 
+.portfolio{
+  height: 170vh;
 }
 
-@media screen and (max-width: 400px) {
+}
 
+@media screen and (max-width: 600px) {
+
+.portfolio{
+  height: 170vh;
+}
+
+.tile{
+  width: 230px;
+  height: 230px;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .tile{
+    width: 200px;
+    height: 200px;
+  }
   .tile h1{
       font-size: 12px;
   }
 
+  .portfolio{
+    height: 160vh;
+  }
+
 }
+
+@media screen and (max-width: 380px) {
+
+
+  .portfolio{
+    height: 170vh;
+  }
+
+}
+
 
 
 
