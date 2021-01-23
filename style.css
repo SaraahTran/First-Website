@@ -6,34 +6,27 @@
     padding: 0;
     box-sizing: inherit;
 }
-
-/**{
+/*
+*{
   border: 1px solid red;
 }*/
 
 
-html{
+html, body{
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-
-}
-
-
-body{
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.5px;
 
 }
 
 a{
     text-decoration: none;
-}
-
-ul{
-    list-style: none;
 }
 
 p{
@@ -47,8 +40,13 @@ p{
 
 /*Navigation*/
 
+.navbar{
+  bottom: 16px;
+  position: relative;
+}
+
 nav {
-    height: 10vh;
+    height: 7vh;
     background: transparent;
     z-index: 1;
   }
@@ -126,14 +124,14 @@ nav a:hover {
 .about {
   background-image: url('images/about-background.png');
   width: 100%;
-  height: 120vh;
   background-size: cover;
+  height: 140vh;
 }
 
 .skills {
   background-image: url('images/skills-background.png');
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
 }
 
@@ -142,6 +140,7 @@ nav a:hover {
   width: 100%;
   height: 160vh;
   background-size: cover;
+  background-color: white;
 }
 
 .social-media {
@@ -183,6 +182,7 @@ nav a:hover {
     top: 50px;
     left: 75%;
     transform: translate(-50%, -50%);
+    z-index: 3;
   }
   
   .btn a{
@@ -229,11 +229,11 @@ nav a:hover {
 
  
 .hero-image{
-    float: right;
-    clear: right;
     margin: 0;
     left: 500px;
+    top: 200px;
     position: absolute;
+    z-index: -0.5;
 
 }
 
@@ -265,11 +265,10 @@ nav a:hover {
 @media screen and (max-width: 1024px) {
 .hero-image{
   position: relative;
-  top: 300px;
-  left: 100px;
+  left: 220px;
   transition: all .40s;
-}
-}
+  bottom: 200px;
+}}
 
 @media screen and (max-width: 900px) {
 
@@ -284,12 +283,15 @@ nav a:hover {
 
     .hero-image{
       left: -370px;
-      top: 200px;
-      float: left;
+      top: 160px;
       position: relative;
       z-index: -0.5;
       transition: all .40s;
    
+   }
+
+   .home{
+     height: 100vh;
    }
 
 
@@ -365,6 +367,18 @@ nav a:hover {
     }
   }
 
+  
+  @media screen and (max-width: 380px) {
+    .hero-image{
+      top: 60px;
+    }
+
+    .skills{
+      display: none;
+    }
+
+  }
+
 /*About Container*/
 
 .about-container p{
@@ -413,17 +427,9 @@ position: relative;
 .about-image{
     position: relative;
     top: 200px;
-    z-index: -1;
 }
 
 @media screen and (max-width: 800px) {
-    .banner{
-        display: none;
-    }
-
-    .banner2{
-        display: none;
-    }
 
     .about-image{
         right: 10px;
@@ -433,6 +439,16 @@ position: relative;
     .about-container p{
       font-size: 13px;
       color:#6C7593;
+  }
+
+  .about-container h1{
+    font-size: 25px;
+}
+}
+
+@media screen and (max-width: 380px) {
+  .about-image{
+    display: none;
   }
 
 }
@@ -445,18 +461,17 @@ position: relative;
   margin: 0 auto;
   overflow: hidden;
   float: center;
-  top: 100px;
+  align-items: center;
   }
 
 
     .skills-wrapper{
       font-size: 1.45rem;
-      color:black;
       align-items: center;
       text-align: center;
       position: relative;
       float: center;
-      width: 70%;
+      width: 80%;
       margin: auto;
       padding-top: 50px;
 
@@ -466,12 +481,14 @@ position: relative;
       align-items: center;
       float: center;
       margin: 0 auto;
+      width: 100%;
     }
-  
 
-    
+    td, tr{
+      padding: 10px;
+    }
+
     .skills-container p{
-        width: 10%;
         text-align: center;
         align-items: center;
         display: inline;
@@ -491,8 +508,6 @@ position: relative;
       letter-spacing: 5px;
       position: relative;
       text-align: center;
-
-    
     }
 
     .skills-container h2{
@@ -537,12 +552,50 @@ position: relative;
         font-size: 15px;
       }
 
+      .skills-container h1{
+        font-size: 25px;
+      }
+      
+
       .grow{
         width: 50px;
         height: 50px;
       }
     }    
 
+                
+    @media screen and (max-width: 450px) {
+    
+
+      td, tr{
+        padding: 0px;
+      }
+
+      .skills-container h2{
+        font-size: 10px;
+      }
+
+    }
+
+    @media screen and (max-width: 280px) {
+
+      .skills{
+        display: none;
+      }
+    }
+
+      @media screen and (max-width: 320px) {
+
+        .about-image{
+          display: none;
+        }
+
+        .hero-image{
+         display: none;
+        }
+  
+    }
+    
 /*Portfolio Container*/
 
   
@@ -557,13 +610,13 @@ position: relative;
 
     .portfolio-wrapper{
       font-size: 1.45rem;
-      color:black;
       align-items: center;
       text-align: center;
       position: relative;
       float: center;
       width: 70%;
       margin: auto;
+      top: 50%;
 
     }
     
@@ -840,14 +893,17 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     width: 250px;
     height: 250px;
   }
+
+  .tile h1{
+    font-size: 23px;
 }
 
+.tile h2{
+  display: none;
+}
+}
 
 @media screen and (max-width: 900px) {
-
-    .tile h1{
-        font-size: 15px;
-    }
 
   .tile{
     width:200px;
@@ -856,88 +912,106 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     transition: all .40s;
   }
 
+  .portfolio-container h1{
+    font-size: 25px;
+  }
+
+  .tile h1{
+    font-size: 13px;
 }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .tile h1{
+      font-size: 12px;
+  }
+
+}
+
 
 
 
 /*Social Media*/
 
 .social-icons{
-    top: 100px;
-    position: relative;
+  top: 100px;
+  position: relative;
 }
 
 .social-media ul {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .social-media ul li {
-    list-style: none;
-  }
-  
-  .social-media ul li a {
-    width: 80px;
-    height: 80px;
-    background-color: #fff;
-    text-align: center;
-    line-height: 80px;
-    font-size: 35px;
-    margin: 0 10px;
-    display: block;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    border: 3px solid #fff;
-    z-index: 1;
-  }
-  
-  .social-media ul li a .icon {
-    position: relative;
-    color: #262626;
-    transition: .5s;
-    z-index: 3;
-  }
-  
-  .social-media ul li a:hover .icon {
-    color: #fff;
-    transform: rotateY(360deg);
-  }
-  
-  .social-media ul li a:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f00;
-    transition: .5s;
-    z-index: 2;
-  }
-  
-  .social-media ul li a:hover:before {
-    top: 0;
-  }
-  
-  .social-media ul li:nth-child(1) a:before{
-    background: #3b5999;
-  }
-  
-  .social-media ul li:nth-child(2) a:before{
-    background: #24292e;
-  }
-  
-  .social-media ul li:nth-child(3) a:before {
-    background: #0077b5;
-  }
-  
-  .social-media ul li:nth-child(4) a:before {
-    background: #053eff;
-  }
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-media ul li {
+  list-style: none;
+}
+
+.social-media ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.social-media ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.social-media ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.social-media ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.social-media ul li a:hover:before {
+  top: 0;
+}
+
+.social-media ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.social-media ul li:nth-child(2) a:before{
+  background: #24292e;
+}
+
+.social-media ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.social-media ul li:nth-child(4) a:before {
+  background: #053eff;
+}
+
 
 
   @media screen and (max-width: 400px) {
@@ -947,3 +1021,18 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
       height: 60px;
 
   }
+  
+
+  
+    
+  @media screen and (max-width: 360px) {
+    .tile{
+      width: 140px;
+      height: 140px;
+    }
+
+    .tile h1{
+      display: none;
+    }
+
+  }}
